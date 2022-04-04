@@ -1,0 +1,114 @@
+/* Master styles */
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* navigation styles */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.left-side{
+    display: flex;
+}
+nav>.left-side>div{
+    margin-right: 20px;
+    font-size: .9em;
+    text-transform: uppercase;
+}
+.nav-link-wrapper{
+    height:22px;
+    border-bottom: 1px solid transparent;
+    transition: border .5s;
+}
+.nav-link-wrapper a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #8a8a8a;
+    transition: color .5s;
+}
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid black;
+}
+.nav-link-wrapper a:hover{
+    color: black;
+}
+/* portfolio styles */
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio-item-wrapper{
+    position: relative;
+}
+.portfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-text-wrapper{
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    /* padding-left: 100px; */
+    padding-right: 100px;
+    text-align: center;
+}
+.logo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+/* needed during hover */
+.img-text-wrapper{
+    width: 100%;
+    padding: 0px;
+}
+.img-text-wrapper .subtitle{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+.img-text-wrapper:hover .subtitle{
+    font-weight: 600;
+    color: lightseagreen;
+}
+.image-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
+/* About page styles */
+.two-columns-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.profile-img-wrapper img{
+    width: 100%;
+  
+   
+}
+.profile-content-wrapper{
+    padding: 30px;
+}
+.profile-content-wrapper h1{
+    color: lightseagreen;
+    text-transform: capitalize;
+}
+.profile-content-wrapper p{
+    line-height: 25px;
+}
